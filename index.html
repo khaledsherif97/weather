@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="weater" content="">
+        <title>Weater App</title>
+        <!--css-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark d-flex row g-0 justify-content-between align-items-center py-5 w-100">
+            <div class="container-fluid col-6 " >
+
+              <a class="navbar-brand mx-auto fs-3 fw-semibold text-info" href="#"><i class="fa-solid fa-cloud pe-3"></i>Weather</a>
+              
+             
+            </div>
+            <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active px-4 text-white link-offset-2 " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4 text-white link-offset-2 " href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4 text-white link-offset-2 " href="#">Photo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4 text-white link-offset-2 " href="#">Content</a>
+                </li>
+                
+              </ul>
+              
+            </div>
+          </nav>
+          <section class="home w-100 pb-5">
+            <form class=" mx-auto w-75 position-relative">
+              <input class="bg-dark  text-info rounded-5 w-100  py-3 ps-3 mt-5 border-0" type="text" placeholder="Find your location..." id="search">
+              <input class="btn btn-find end-0 btn-info py-3 px-5  border border-0 border-dark rounded-5  text-uppercase fw-semibold  mt-5" type="button" value="Find" id="submit">
+            </form>
+            <div class=" row g-0  mt-5 w-75 mx-auto ">
+              <!--today-->
+              <div class=" col-12 col-lg-4  ">
+                
+                <div class="bg-dark text-white w-100 px-3 py-4 h-100">
+                  <div class="row text-white bg-secondary  px-3 ">
+                    <span id="todayName" class=" col-6">today</span>
+                    <span  class=" col-6">
+                      <span id="todayNum">22</span>
+                      <span id="todayMonth">jan</span>
+                    </span>
+                  </div>
+                  <p id="todayLcation" class="p-2 mt-3">Alexandria</p>
+                  <p class="display-1 fw-semibold">
+                     <span id="todayTemp">15</span> 
+                    <span><sup>o</sup>c</span>
+                    <img id="todayImg" src="//cdn.weatherapi.com/weather/64x64/day/296.png">
+                  </p>
+                  <p id="todayCond" class="text-info mt-5">partly cloudy</p>
+                  <p class="mt-5">
+                    <span id="humidity" class="p-2"><i class="fa-solid fa-umbrella"></i> %</span>
+                    <span id="wind" class="p-2"><i class="fa-solid fa-wind"></i>18 km/h</span>
+                    <span id="direction" class="p-2"><i class="fa-solid fa-compass"></i> </span>
+                  </p>
+
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-4 ">
+                
+                <div class="bg-secondary text-white w-100 px-3 py-3 text-center h-100">
+                  <div class="row text-white bg-dark  px-3 mt-2">
+                    <span class=" nextDay col-12">wansday</span>
+                    
+                  </div>
+                  <p class="display-4 mt-5">
+                    <img class="nextDayImg" src="//cdn.weatherapi.com/weather/64x64/day/296.png">
+                  </p>
+                  <p class="nextDayMaxTemp display-4"> 15 </p>
+                  <p class="nextDayMinTemp  fs-5"> 10 </p>
+                  <p class="nextCond text-info">partly cloudy</p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-4 ">
+                
+                <div class="bg-dark text-white w-100 px-3 py-3 text-center h-100">
+                  <div class="row text-white bg-secondary  px-3 mt-2">
+                    <span class="nextDay col-12">wansday</span>
+                    
+                  </div>
+                  <p class="display-4 mt-5">
+                    <img class="nextDayImg" src="//cdn.weatherapi.com/weather/64x64/day/296.png">
+                  </p>
+                  <p class="nextDayMaxTemp display-4"> 15 </p>
+                  <p class="nextDayMinTemp fs-5"> 10 </p>
+                  <p class=" nextCond text-info">partly cloudy</p>
+
+                </div>
+
+              </div>
+              
+
+
+            </div>
+          </section>
+          
+          <section class="bg-secondary endSection">
+            <form class=" mx-auto w-75 position-relative  ">
+              <input class="bg-dark  rounded-5 w-100  py-3 ps-3 mt-5 border-0" type="text" placeholder="Enter your email to subscribe..." id="search">
+              <input class="btn btn-find end-0 btn-info py-3 px-5  border border-0 border-dark rounded-5  text-uppercase fw-semibold  mt-5" type="button" value="subscribe" id="submit">
+            </form>
+            <div class="d-flex align-items-center  justify-content-center mt-5 mb-5">
+              <div class="social-icons d-flex justify-content-center align-items-center bg-dark opacity-50">
+                  <i class="fa-brands fa-facebook-f text-primary "></i>
+              </div>
+              <div class="social-icons d-flex justify-content-center align-items-center bg-dark opacity-50">
+                  <i class="fa-brands fa-twitter text-primary"></i>
+              </div>
+              <div class="social-icons d-flex justify-content-center align-items-center bg-dark opacity-50">
+                  <i class="fa-brands fa-dribbble text-primary"></i>
+              </div>
+              <div class="social-icons d-flex justify-content-center align-items-center bg-dark opacity-50">
+                  <i class="fa-brands fa-linkedin-in text-primary"></i>
+              </div>
+          </div>
+            
+            <p class="ps-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, perspiciatis!</p>
+
+          </section>
+
+
+
+
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
